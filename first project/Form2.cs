@@ -93,7 +93,7 @@ namespace first_project
 
         private void numPhone_TextChanged(object sender, EventArgs e)
         {
-            this.
+            
 
         }
     }
