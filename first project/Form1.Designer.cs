@@ -155,7 +155,7 @@
             this.username.TabIndex = 0;
             this.username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.username, "ادخل اسم المستخدم");
-            
+            this.username.TextChanged += new System.EventHandler(this.username_TextChanged);
             // 
             // toolTip1
             // 

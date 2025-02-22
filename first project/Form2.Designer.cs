@@ -30,15 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.data1 = new System.Windows.Forms.DataGridView();
             this.mm1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.m2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.m3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.m4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.m5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.m6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mm6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button4 = new System.Windows.Forms.Button();
+            this.find = new System.Windows.Forms.Button();
             this.mm5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mm2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button3 = new System.Windows.Forms.Button();
@@ -56,35 +57,39 @@
             this.id = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.mm3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mm = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.ch2 = new System.Windows.Forms.CheckBox();
-            this.ch1 = new System.Windows.Forms.CheckBox();
             this.cbxCity = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.male = new System.Windows.Forms.RadioButton();
+            this.fmale = new System.Windows.Forms.RadioButton();
+            this.mm = new System.Windows.Forms.ComboBox();
+            this.GO = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.data1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // data1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.data1.BackgroundColor = System.Drawing.Color.White;
+            this.data1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mm1,
             this.m2,
             this.m3,
             this.m4,
             this.m5,
-            this.m6});
-            this.dataGridView1.Location = new System.Drawing.Point(-8, 375);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 26;
-            this.dataGridView1.Size = new System.Drawing.Size(817, 116);
-            this.dataGridView1.TabIndex = 37;
+            this.m6,
+            this.Column1});
+            this.data1.Location = new System.Drawing.Point(-8, 375);
+            this.data1.Name = "data1";
+            this.data1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.data1.RowHeadersWidth = 51;
+            this.data1.RowTemplate.Height = 26;
+            this.data1.Size = new System.Drawing.Size(817, 116);
+            this.data1.TabIndex = 20;
             // 
             // mm1
             // 
@@ -128,6 +133,14 @@
             this.m6.Name = "m6";
             this.m6.Width = 125;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "الجنس";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 125;
+            // 
             // mm6
             // 
             this.mm6.HeaderText = "المحافظة";
@@ -135,19 +148,20 @@
             this.mm6.Name = "mm6";
             this.mm6.Width = 125;
             // 
-            // button4
+            // find
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button4.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button4.Location = new System.Drawing.Point(36, 291);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(116, 45);
-            this.button4.TabIndex = 38;
-            this.button4.Text = "بحث";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
+            this.find.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.find.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.find.Image = ((System.Drawing.Image)(resources.GetObject("find.Image")));
+            this.find.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.find.Location = new System.Drawing.Point(36, 291);
+            this.find.Name = "find";
+            this.find.Size = new System.Drawing.Size(116, 45);
+            this.find.TabIndex = 19;
+            this.find.Text = "بحث";
+            this.find.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.find.UseVisualStyleBackColor = false;
+            this.find.Click += new System.EventHandler(this.find_Click);
             // 
             // mm5
             // 
@@ -172,7 +186,7 @@
             this.button3.Location = new System.Drawing.Point(244, 291);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(122, 45);
-            this.button3.TabIndex = 36;
+            this.button3.TabIndex = 18;
             this.button3.Text = "حذف";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = false;
@@ -193,10 +207,11 @@
             this.button2.Location = new System.Drawing.Point(433, 291);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(112, 45);
-            this.button2.TabIndex = 35;
+            this.button2.TabIndex = 17;
             this.button2.Text = "تعديل";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // addData
             // 
@@ -207,7 +222,7 @@
             this.addData.Location = new System.Drawing.Point(600, 291);
             this.addData.Name = "addData";
             this.addData.Size = new System.Drawing.Size(128, 45);
-            this.addData.TabIndex = 34;
+            this.addData.TabIndex = 16;
             this.addData.Text = "أضافة";
             this.addData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.addData.UseVisualStyleBackColor = false;
@@ -220,7 +235,7 @@
             this.label6.Location = new System.Drawing.Point(215, 164);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 21);
-            this.label6.TabIndex = 33;
+            this.label6.TabIndex = 10;
             this.label6.Text = "المحافظة";
             // 
             // label5
@@ -230,8 +245,9 @@
             this.label5.Location = new System.Drawing.Point(704, 168);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 21);
-            this.label5.TabIndex = 32;
+            this.label5.TabIndex = 4;
             this.label5.Text = "التخصص";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -240,7 +256,7 @@
             this.label4.Location = new System.Drawing.Point(210, 65);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 21);
-            this.label4.TabIndex = 29;
+            this.label4.TabIndex = 6;
             this.label4.Text = "رقم الهاتف";
             // 
             // label3
@@ -250,7 +266,7 @@
             this.label3.Location = new System.Drawing.Point(250, 113);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 21);
-            this.label3.TabIndex = 28;
+            this.label3.TabIndex = 8;
             this.label3.Text = "العمر";
             // 
             // label2
@@ -260,15 +276,16 @@
             this.label2.Location = new System.Drawing.Point(680, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 21);
-            this.label2.TabIndex = 27;
+            this.label2.TabIndex = 2;
             this.label2.Text = "اسم الطالب";
             // 
             // numPhone
             // 
             this.numPhone.Location = new System.Drawing.Point(25, 66);
             this.numPhone.Name = "numPhone";
+            this.numPhone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.numPhone.Size = new System.Drawing.Size(153, 24);
-            this.numPhone.TabIndex = 26;
+            this.numPhone.TabIndex = 7;
             this.toolTip1.SetToolTip(this.numPhone, "يجب ان لا يقل رقم الهاتف عن تسعة ارقام  ");
             this.numPhone.TextChanged += new System.EventHandler(this.numPhone_TextChanged);
             this.numPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numPhone_KeyPress);
@@ -277,22 +294,25 @@
             // 
             this.name.Location = new System.Drawing.Point(341, 109);
             this.name.Name = "name";
+            this.name.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.name.Size = new System.Drawing.Size(314, 24);
-            this.name.TabIndex = 25;
+            this.name.TabIndex = 3;
             // 
             // age
             // 
             this.age.Location = new System.Drawing.Point(25, 113);
             this.age.Name = "age";
+            this.age.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.age.Size = new System.Drawing.Size(153, 24);
-            this.age.TabIndex = 23;
+            this.age.TabIndex = 9;
             // 
             // id
             // 
             this.id.Location = new System.Drawing.Point(424, 65);
             this.id.Name = "id";
+            this.id.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.id.Size = new System.Drawing.Size(231, 24);
-            this.id.TabIndex = 24;
+            this.id.TabIndex = 1;
             // 
             // label1
             // 
@@ -302,7 +322,7 @@
             this.label1.Location = new System.Drawing.Point(661, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 21);
-            this.label1.TabIndex = 22;
+            this.label1.TabIndex = 0;
             this.label1.Text = "الرقم الجامعي";
             // 
             // mm3
@@ -312,13 +332,6 @@
             this.mm3.Name = "mm3";
             this.mm3.Width = 125;
             // 
-            // mm
-            // 
-            this.mm.Location = new System.Drawing.Point(461, 164);
-            this.mm.Name = "mm";
-            this.mm.Size = new System.Drawing.Size(203, 24);
-            this.mm.TabIndex = 31;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -326,30 +339,8 @@
             this.label7.Location = new System.Drawing.Point(240, 248);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 21);
-            this.label7.TabIndex = 39;
+            this.label7.TabIndex = 13;
             this.label7.Text = "الجنس";
-            // 
-            // ch2
-            // 
-            this.ch2.AutoSize = true;
-            this.ch2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ch2.Location = new System.Drawing.Point(42, 251);
-            this.ch2.Name = "ch2";
-            this.ch2.Size = new System.Drawing.Size(61, 22);
-            this.ch2.TabIndex = 40;
-            this.ch2.Text = "انثى";
-            this.ch2.UseVisualStyleBackColor = true;
-            // 
-            // ch1
-            // 
-            this.ch1.AutoSize = true;
-            this.ch1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ch1.Location = new System.Drawing.Point(128, 251);
-            this.ch1.Name = "ch1";
-            this.ch1.Size = new System.Drawing.Size(54, 22);
-            this.ch1.TabIndex = 41;
-            this.ch1.Text = "ذكر";
-            this.ch1.UseVisualStyleBackColor = true;
             // 
             // cbxCity
             // 
@@ -381,18 +372,83 @@
             "الجوف"});
             this.cbxCity.Location = new System.Drawing.Point(25, 165);
             this.cbxCity.Name = "cbxCity";
+            this.cbxCity.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cbxCity.Size = new System.Drawing.Size(153, 24);
-            this.cbxCity.TabIndex = 42;
+            this.cbxCity.TabIndex = 12;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-6, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(831, 470);
+            this.pictureBox1.Size = new System.Drawing.Size(895, 470);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 43;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // male
+            // 
+            this.male.AutoSize = true;
+            this.male.Location = new System.Drawing.Point(138, 248);
+            this.male.Name = "male";
+            this.male.Size = new System.Drawing.Size(49, 21);
+            this.male.TabIndex = 13;
+            this.male.TabStop = true;
+            this.male.Text = "ذكر";
+            this.male.UseVisualStyleBackColor = true;
+            // 
+            // fmale
+            // 
+            this.fmale.AutoSize = true;
+            this.fmale.Location = new System.Drawing.Point(36, 248);
+            this.fmale.Name = "fmale";
+            this.fmale.Size = new System.Drawing.Size(55, 21);
+            this.fmale.TabIndex = 14;
+            this.fmale.TabStop = true;
+            this.fmale.Text = "انثى";
+            this.fmale.UseVisualStyleBackColor = true;
+            // 
+            // mm
+            // 
+            this.mm.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.mm.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.mm.FormattingEnabled = true;
+            this.mm.Items.AddRange(new object[] {
+            "علوم حاسوب",
+            "IT",
+            "امن سبراني",
+            "نظم معلومات"});
+            this.mm.Location = new System.Drawing.Point(424, 175);
+            this.mm.Name = "mm";
+            this.mm.Size = new System.Drawing.Size(236, 24);
+            this.mm.TabIndex = 6;
+            // 
+            // GO
+            // 
+            this.GO.BackColor = System.Drawing.Color.SteelBlue;
+            this.GO.Font = new System.Drawing.Font("Wide Latin", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GO.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.GO.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.GO.Location = new System.Drawing.Point(-6, 3);
+            this.GO.Name = "GO";
+            this.GO.Size = new System.Drawing.Size(158, 47);
+            this.GO.TabIndex = 44;
+            this.GO.Text = "للرجوع";
+            this.GO.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.GO.UseVisualStyleBackColor = false;
+            this.GO.Click += new System.EventHandler(this.GO_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.SteelBlue;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(2, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(59, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 45;
+            this.pictureBox2.TabStop = false;
             // 
             // Form2
             // 
@@ -400,12 +456,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(812, 450);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.GO);
+            this.Controls.Add(this.mm);
+            this.Controls.Add(this.fmale);
+            this.Controls.Add(this.male);
             this.Controls.Add(this.cbxCity);
-            this.Controls.Add(this.ch1);
-            this.Controls.Add(this.ch2);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.data1);
+            this.Controls.Add(this.find);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.addData);
@@ -419,13 +478,13 @@
             this.Controls.Add(this.age);
             this.Controls.Add(this.id);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.mm);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -433,7 +492,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView data1;
         private System.Windows.Forms.DataGridViewTextBoxColumn mm1;
         private System.Windows.Forms.DataGridViewTextBoxColumn m2;
         private System.Windows.Forms.DataGridViewTextBoxColumn m3;
@@ -441,7 +500,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn m5;
         private System.Windows.Forms.DataGridViewTextBoxColumn m6;
         private System.Windows.Forms.DataGridViewTextBoxColumn mm6;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button find;
         private System.Windows.Forms.DataGridViewTextBoxColumn mm5;
         private System.Windows.Forms.DataGridViewTextBoxColumn mm2;
         private System.Windows.Forms.Button button3;
@@ -459,12 +518,15 @@
         private System.Windows.Forms.TextBox id;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn mm3;
-        private System.Windows.Forms.TextBox mm;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox ch2;
-        private System.Windows.Forms.CheckBox ch1;
         private System.Windows.Forms.ComboBox cbxCity;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.RadioButton male;
+        private System.Windows.Forms.RadioButton fmale;
+        private System.Windows.Forms.ComboBox mm;
+        private System.Windows.Forms.Button GO;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
